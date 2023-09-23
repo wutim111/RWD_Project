@@ -16,13 +16,24 @@
                 </h1>
                 <ul class="menu">
                     <li>
-                        <a href="#">特色</a>
+                        <a class="menu_feature" href="#">特色</a>
                     </li>
                     <li>
-                        <a href="#">主廚</a>
+                        <a class="menu_chef" href="#">主廚</a>
                     </li>
                     <li>
-                        <a href="#">地圖</a>
+                        <a class="menu_map" href="#">地圖</a>
+                    </li>
+                    <li>
+                        <a class="menu_link" href="#">連結</a>
+                        <ul class="link_menu">
+                            <li>
+                                <a href="#">登入</a>
+                            </li>
+                            <li>
+                                <a href="#">訂餐</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
                 <div class="menu_btn">
@@ -139,10 +150,10 @@
                                 <label for="people">人數</label>
                                 <input type="number" id="people">
                             </li>
-                                <label for="vegetarian">是否需要素食</label>
+                                <label for="vegetarian_true">是否需要素食</label>
                                 <div class="vegetarian">
-                                    是<input type="radio" name="vegetarian"> 
-                                    否<input type="radio" name="vegetarian">
+                                    是<input type="radio" name="vegetarian" id="vegetarian_true" value="true"> 
+                                    否<input type="radio" name="vegetarian" id="vegetarian_false" value="false">
                                 </div>
                             </li>
                             <li class="form_buttons">

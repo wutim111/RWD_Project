@@ -104,6 +104,13 @@ a{
 .menu a:hover{
 	background: #004466;
 }
+.link_menu{
+	position: fixed;/***讓 overflow: hidden失效**/
+	display: none;
+}
+.link_menu li{
+	background-color: rgba(112, 96, 96, 0.75);
+}
 .menu_btn{
 	display: none;
 }
@@ -114,7 +121,9 @@ a{
 	height: 52px;
 	color: white;
 }
-
+.menu_btn .menu_current{
+	background: #004466;
+}
 @media (max-width:576px){
 	.menu_btn{
 		display: block;
@@ -126,6 +135,9 @@ a{
 		position: absolute;
 		top: 52px;
 		background: rgba(0,0,0,0.75);
+	}
+	.link_menu{
+		width: 100%;
 	}
 }
 .menu_open .menu{
